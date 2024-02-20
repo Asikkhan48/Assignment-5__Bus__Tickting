@@ -1,33 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bus Ticket</title>
 
     <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- font -->
-<link rel="stylesheet" href="style.css">
-</head>
+    <!-- font -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-
-<body>
+  <body>
     <main>
-        <nav>
+      <!-- Nav-Bare -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a class="text-4xl font-bold">P-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn text-2xl text-[#1DD100] font-semibold"
+              >BUS
+              <img src="images/bus-icon.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </nav>
 
-        </nav>
-        
-        <section>
+      <!-- Hero Section -->
+      <section>
+        <div class="hero min-h-screen">
+          <img src="images/banner.png" alt="" />
+          <div class="bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div>
+              <h1 class="mb-5 text-5xl font-bold text-">
+                End-to-End Travel with <br />
+                <span class="text-[#1DD100]">P.Paribahan</span>
+              </h1>
+              <p class="mb-5 font-medium">
+                Looking for great deals on bus tickets? We'll make it easy for
+                you! <br />
+                Get the lowest prices, and renowned bus operators - all in one
+                place.
+              </p>
+              <button class="btn bg-[#1DD100] font-medium">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
-        
-        <section>
+      <!-- Offer Section -->
+      <section>
+        <div>
+          <h1 class="text-4xl text-center font-semibold mb-10">
+            Best offers for you
+          </h1>
+        </div>
 
+        <!-- Offer Card -->
+        <div class="flex justify-center mb-10">
+          <div
+            class="flex justify-between bg-[#FFBF0F] rounded-lg p-8 mr-10 px-50"
+          >
+            <div class="mr-10">
+              <h1 class="text-3xl font-semibold">15% OFF</h1>
+              <p class="font-semibold">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
 
-        </section>
+            <div>
+              <h1 class="text-3xl font-semibold">NEW15</h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+
+          <div class="flex justify-between bg-[#F78C9C] rounded-lg p-8">
+            <div class="mr-10">
+              <h1 class="text-3xl font-semibold">20% OFF</h1>
+              <p class="font-semibold">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+
+            <div>
+              <h1 class="text-3xl font-semibold">Couple 20</h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Offer Button -->
+      <section>
+        <div class="text-center mb-10">
+          <button class="btn btn-outline btn-primary">See All Offers</button>
+        </div>
+      </section>
+
+      <!-- Set Booking Section  -->
+
+      <section class="border-4 rounded-t-lg border-t-green-400 bg-base-300">
+        <!-- PH Paribhan Text -->
+        <div class="text-center pt-10 mb-10">
+          <h1 class="text-4xl font-semibold pb-5">P.H Paribahan</h1>
+          <p class="font-medium">
+            Hanif Enterprise Bus Tickets Bangladesh is a popular AC/non-AC
+            <br />
+            bus service in the country.
+          </p>
+        </div>
+
+        <!-- Greenline Paribahan -->
+
+        <div class="w-5/6 bg-[#ffffff] m-10 p-8 rounded-3xl">
+          <div class="flex justify-around">
+            <div class="flex">
+              <!-- fisrt Part -->
+              <div class="flex">
+                <div class="flex">
+                  <div>
+                    <img src="images/bus-logo.png" alt="bus" />
+                  </div>
+
+                  <div class="pl-5">
+                    <h1 class="text-3xl font-semibold">Greenline Paribahan</h1>
+                    <p class="font-light">Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+
+                <div>
+                  <a class="btn text-2xl text-[#1DD100] font-semibold"
+                    >40 Seats left
+                    <img src="images/seat-green.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <!-- first Part End -->
+            </div>
+
+            <div class="grid grid-cols-2 items-center">
+              <div><img src="images/info-devider.png" alt="info-divider"></div>
+              <div>
+                <img src="images/fare.png" alt="">
+              <p class="text-3xl font-semibold">550 Taka</p>
+                <p>Per Seat</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
