@@ -4,3 +4,11 @@
 .font-raleway {
     font-family: "Raleway", sans-serif;
   }
+
+
+  li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 150px;
+}
