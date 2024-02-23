@@ -4,7 +4,7 @@ let count = 0;
 let count2 = getInnerTextValue("total-seat");
 for (const btn of allBtn) {
   btn.addEventListener("click", function (e) {
-    // validation of max 4 tickets
+    // Four Ticket
     if (count >= 4){
         return alert("You can buy only 4 tickets.");
     }
@@ -12,7 +12,7 @@ for (const btn of allBtn) {
     setInnerText("cart-count", count);
     count2 = count2 - 1;
     setInnerText("total-seat", count2);
-    // append the seat number on right cart
+    // Child append
     const seatNumber = e.target.innerText;
     console.log(seatNumber);
     const selectedContainer = document.getElementById("cart-container");
@@ -31,12 +31,10 @@ for (const btn of allBtn) {
     // adding background color on the selected button
     e.target.style.backgroundColor = "#1DD100";
 
-    //total price update
+    //Updated price
     totalCost("total-cost", parseInt(seatPrice));
-    // grand total update
+    // grand total
     totalCost("grand-total", parseInt(seatPrice));
-    // disable button after selection
-    e.target.disabled = true;
   });
 }
 
